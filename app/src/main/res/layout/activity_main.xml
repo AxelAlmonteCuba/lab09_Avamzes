@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
@@ -43,6 +43,7 @@
             android:layout_marginBottom="16dp" />
 
         <LinearLayout
+            android:id="@+id/button_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -51,16 +52,38 @@
 
             <Button
                 android:id="@+id/play_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:text="Play"
+                android:drawableStart="@drawable/ic_play"
+                android:drawablePadding="8dp"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/pause_button"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Pause"
+                android:drawableStart="@drawable/ic_pause"
+                android:drawablePadding="8dp"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/resume_button"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Resume"
+                android:drawableStart="@drawable/ic_resume"
+                android:drawablePadding="8dp"
                 android:layout_marginEnd="16dp" />
 
             <Button
                 android:id="@+id/stop_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stop" />
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Stop"
+                android:drawableStart="@drawable/ic_stop"
+                android:drawablePadding="8dp" />
         </LinearLayout>
     </RelativeLayout>
 

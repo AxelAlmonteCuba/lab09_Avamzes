@@ -23,6 +23,7 @@
         </activity>
         <service
             android:name=".AudioPlayService"
+            android:exported="false"
             android:foregroundServiceType="mediaPlayback"
             tools:ignore="ForegroundServicePermission" />
 
